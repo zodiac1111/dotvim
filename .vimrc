@@ -10,6 +10,7 @@ nmap <c-a> :A<cr>
 " Fast saving
 "nmap ww :w!<cr>
 ""检测文件类型?
+
 filetype plugin indent on
 set completeopt=longest,menu
 "IDE
