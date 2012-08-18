@@ -1,6 +1,14 @@
+"不要使用箭头来移动了!!
+"ctrl+[ 可以快速切换到命令模式
+inoremap <Left>  <NOP>
+inoremap <Right> <NOP>
+inoremap <Up>    <NOP>
+inoremap <Down>  <NOP>
+"禁止箭头键 :)
+
 " .vimrc vim 配置文件.
 "缩写 日期 imode下键入xdate<cr>自动补齐
-ia xdate <c-r>=strftime("%yy/%mm/%dd %H:%M:%S")<cr>
+ia xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 "当前文件名
 ia xfname <c-r>%
 "按缩进折叠,启动时默认为折叠状态
@@ -10,7 +18,6 @@ nmap <c-a> :A<cr>
 " Fast saving
 "nmap ww :w!<cr>
 ""检测文件类型?
-
 filetype plugin indent on
 set completeopt=longest,menu
 "IDE
