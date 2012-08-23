@@ -1,9 +1,9 @@
 "不要使用箭头来移动了!!
 "ctrl+[ 可以快速切换到命令模式
-inoremap <Left>  <NOP>
-inoremap <Right> <NOP>
-inoremap <Up>    <NOP>
-inoremap <Down>  <NOP>
+noremap <Left>  <NOP>
+noremap <Right> <NOP>
+noremap <Up>    <NOP>
+noremap <Down>  <NOP>
 "禁止箭头键 :)
 
 " .vimrc vim 配置文件.
