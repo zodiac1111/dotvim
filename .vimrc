@@ -1,9 +1,14 @@
+highlight Pmenu guibg=brown gui=bold  "弹出菜单颜色,失效中
+"搜索时忽略大小写
+set ignorecase
+set incsearch   "输入搜索字符串的同时进行搜索"
+set cursorline      "强调光标所在行"
 "不要使用箭头来移动了!!
 "ctrl+[ 可以快速切换到命令模式
-noremap <Left>  <NOP>
-noremap <Right> <NOP>
-noremap <Up>    <NOP>
-noremap <Down>  <NOP>
+""noremap <Left>  <NOP>
+""noremap <Right> <NOP>
+""noremap <Up>    <NOP>
+""noremap <Down>  <NOP>
 "禁止箭头键 :)
 
 " .vimrc vim 配置文件.
@@ -11,6 +16,7 @@ noremap <Down>  <NOP>
 ia xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 "当前文件名
 ia xfname <c-r>%
+ia xfilename <c-r>%
 "按缩进折叠,启动时默认为折叠状态
 "set foldmethod=indent
 "Head同名头文件源文件切换
@@ -45,6 +51,9 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 set nu
 set cin
+set smartindent     "智能缩进"
+set autoread        "当文件在外部被改变时，vim自动更新载入"
+set showmatch       "显示匹配的括号"
 "set cursorline
 "编码
 ""set fileencodings=utf-8,gb2312,gbk,gb18030
