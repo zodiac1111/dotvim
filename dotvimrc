@@ -8,7 +8,7 @@ set cursorline      "强调光标所在行"
 ""noremap <Left>  <NOP>
 ""noremap <Right> <NOP>
 ""noremap <Up>    <NOP>
-""noremap <Down>  <NOP>
+"noremap <Down>  <NOP>
 "禁止箭头键 :)
 
 " .vimrc vim 配置文件.
