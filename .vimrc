@@ -13,7 +13,7 @@ set cursorline      "强调光标所在行"
 
 " .vimrc vim 配置文件.
 "缩写 日期 imode下键入xdate<cr>自动补齐
-ia xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
+ia xdate <c-r>=strftime("%Y/%m/%d %H:%M:%S")<cr>
 "当前文件名
 ia xfname <c-r>%
 ia xfilename <c-r>%
