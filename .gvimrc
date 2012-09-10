@@ -5,6 +5,6 @@ set langmenu=zh_CN.UTF-8
 set imcmdline
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
-"设置gvim到当前目录"
-set autochdir
+"设置gvim到当前目录,按需要设置
+"set autochdir
 set guifont=文泉驿等宽正黑\ Medium\ 10
