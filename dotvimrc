@@ -65,6 +65,7 @@ set encoding=utf-8
 
 "high light
 "cale -a | grep zh_CN
+"设置高亮81列，需要vim7.3版本以上
 set cc=81
 hi colorcolumn guibg=lightgreen
 
