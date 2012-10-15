@@ -1,4 +1,11 @@
+"file: ~.vim/dotvimrc in UTF-8
+"vim(not gvim/vi) configure file
+"
+"to set vim swap file (*.swp~) path
+"set directory=~/tmp " where to put swap file 
+
 highlight Pmenu guibg=brown gui=bold  "弹出菜单颜色,失效中
+
 "搜索时忽略大小写
 set ignorecase
 set incsearch   "输入搜索字符串的同时进行搜索"
@@ -17,13 +24,17 @@ ia xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 "当前文件名
 ia xfname <c-r>%
 ia xfilename <c-r>%
+
 "按缩进折叠,启动时默认为折叠状态
 "set foldmethod=indent
+
 "Head同名头文件源文件切换
 nmap <c-a> :A<cr>
-" Fast saving
-"nmap ww :w!<cr>
-""检测文件类型?
+
+"Fast saving
+nmap ww :w!<cr>
+
+"检测文件类型?
 filetype plugin indent on
 set completeopt=longest,menu
 "IDE
@@ -49,8 +60,8 @@ colorscheme morning
 "
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
-set nu
-set cin
+set number 		"显示行号
+set cin		"c indent缩进
 set smartindent     "智能缩进"
 set autoread        "当文件在外部被改变时，vim自动更新载入"
 set showmatch       "显示匹配的括号"
@@ -69,6 +80,7 @@ set encoding=utf-8
 set cc=81
 hi colorcolumn guibg=lightgreen
 
+"括号 引号 等匹配
 :inoremap ( ()<ESC>i
 :inoremap ) <c-r>=ClosePair(')')<CR>
 :inoremap { {}<ESC>i
