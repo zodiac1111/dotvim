@@ -1,6 +1,5 @@
 " /home/zodiac1111/.vimrc vim启动命令配置文件
 "
-
 "弹出菜单颜色,失效中
 highlight Pmenu guibg=brown gui=bold  
 
@@ -61,6 +60,9 @@ colorscheme morning
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 set number "显示行号
+set list "显示空白符
+"显示空白符类型 eol:¶,extends:-
+set listchars=tab:»·,trail:·,nbsp:·,extends:-
 set mouse=a "使用鼠标选择时不选中行号
 set cindent "c语言缩进"
 set smartindent     "智能缩进"
