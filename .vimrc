@@ -1,7 +1,7 @@
 " /home/zodiac1111/.vimrc vim启动命令配置文件
 "
 "弹出菜单颜色,失效中
-highlight Pmenu guibg=brown gui=bold  
+highlight Pmenu guibg=brown gui=bold
 
 "搜索时忽略大小写
 set ignorecase
@@ -29,12 +29,17 @@ ia xfilename <c-r>%
 "http://www.vim.org/scripts/script.php?script_id=31
 nmap <s-tab> :A<cr>
 imap <c-tab> :A<cr>
-" Fast saving
+
+"Fast saving 快捷操作
+" 快速保存
 nmap ww :w!<cr>
+" 快速退出
 nmap qq :q!<cr>
+
 ""检测文件类型?
 filetype plugin indent on
 set completeopt=longest,menu
+
 "IDE
 ""let Tlist_Show_One_File=1
 ""let Tlist_Exit_OnlyWindow=1
@@ -52,23 +57,24 @@ set completeopt=longest,menu
 nmap <c-t> :WMToggle<Cr>
 nmap <c-l> :NERDTree<Cr>
 "调试vim"
-""set verbose=9 
-
+""set verbose=9
 
 colorscheme morning
 "
 set cscopequickfix=s-,c-,d-,i-,t-,e-
+set number	"显示行号
+set list	"显示空白符
+" 显示空白符类型
+"  eol:¶ end of line
+"  extends:•
+set listchars=tab:»·,trail:·
 
-set number "显示行号
-set list "显示空白符
-"显示空白符类型 eol:¶,extends:-
-set listchars=tab:»·,trail:·,nbsp:·,extends:-
-set mouse=a "使用鼠标选择时不选中行号
-set cindent "c语言缩进"
-set smartindent     "智能缩进"
-set autoread        "当文件在外部被改变时，vim自动更新载入"
-set showmatch       "显示匹配的括号"
-set pastetoggle=<F12> "粘帖模式"
+set mouse=a		"使用鼠标选择时不选中行号,滚轮时影响虚拟终端颜色主题
+set cindent		"c语言缩进"
+set smartindent		"智能缩进"
+set autoread		"当文件在外部被改变时，vim自动更新载入"
+set showmatch		"显示匹配的括号"
+set pastetoggle=<F12>	"粘帖模式 按F12时切换,按原来格式粘贴,不会格式错乱
 "set cursorline
 "编码
 ""set fileencodings=utf-8,gb2312,gbk,gb18030
