@@ -1,0 +1,19 @@
+[user]
+	name = zodiac1111
+	email = zodiac8765+github_admin@gmail.com
+[color]
+	diff = auto
+	log = auto
+	branch = auto
+	ui = true
+[alias]  
+	co = checkout
+	mg = merge
+	ci = commit -a
+	st = status
+	br = branch
+	df = diff
+[push]
+#default = simple
+[push]
+	default = current
