@@ -22,6 +22,7 @@
 	# 简单的漂亮一点的日志
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	k = !gitk
+	gg = !giggle
 	# 比较工具
 	meld = !meld HEAD
 	# 图形化历史
