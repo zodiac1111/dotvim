@@ -6,13 +6,28 @@
 	log = auto
 	branch = auto
 	ui = true
-[alias]  
+[alias]
+	#  查看指定的alias
+	aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 	co = checkout
 	mg = merge
 	ci = commit -a
 	st = status
 	br = branch
 	df = diff
+	# 打印所有分支参考  http://git-scm.com/docs/git-show-branch.html
+	sb = show-branch
+	# undo 强制恢复到最近版本,这是危险的
+	UNDO = reset --hard
+	# 简单的漂亮一点的日志
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	k = !gitk
+	# 比较工具
+	meld = !meld HEAD
+	# 图形化历史
+	graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
+[mergetool "mymeld"]
+	cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $BASE $REMOTE $MERGED
 [push]
 #default = simple
 [push]
